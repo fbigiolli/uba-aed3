@@ -1,0 +1,9 @@
+Fuerza bruta
+
+Se aplica generalmente a algoritmos de busqueda.
+
+Backtracking 
+
+Soluciones candidatas son las que estan completas y cumplen con la condicion del algoritmo.
+Pueden ser optimas o no, depende si son las que elije el algoritmo.
+
