@@ -13,7 +13,8 @@ bool exists_subset_sum(vector<int>& set, int i, int j, vector<int>& subset)
         for(auto num : subset)
         {
             cout << num << " ";
-        }      
+        }
+        cout << "Fin del subset ";
         return true;
     }
 
@@ -35,14 +36,18 @@ bool exists_subset_sum(vector<int>& set, int i, int j, vector<int>& subset)
 
 int main()
 {
+    // Inicializar un vector con valores arbitrarios
     vector<int> set;
     for (int i = 0; i < 15; i++)
     {
         set.push_back(i);
     }
-    
-    int k = 9;
+
+    // Inicializar subset vacio y valor solicitado para la suma
+    int k = 58;
     vector<int> subset;
+
     if(!exists_subset_sum(set,set.size(),k,subset)) cout << "No existe un subconjunto que sume " << k << endl;
+
     return 0;
 }
